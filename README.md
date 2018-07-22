@@ -11,4 +11,5 @@ Currenlty, an implementation of the method is already available in the library s
 - The second problem is regarding the formulation of the bi-laplacian matrix. Currently, bi-laplacian coefficients are calculated separately for each pixel while all of them, except ones next to the boundary, are the same.  
 
 There is still a problem in this implementation regarding holes next to the image boundary. Biharmonic equation requires a band of two pixel around the hole boundary, but we don't have this information along the image boundary. Therefore, we have to use special stencils for these boundary pixels, which is a bit more complicated because we have to treat these pixels independently. Hopefully, I could set aside sometime solve this problem in the future.
+
 [1] Damelin, S. and Hoang, N. (2018). On Surface Completion and Image Inpainting by Biharmonic Functions: Numerical Aspects. International Journal of Mathematics and Mathematical Sciences, 2018, pp.1-8.
